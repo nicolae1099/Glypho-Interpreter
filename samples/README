@@ -1,0 +1,16 @@
+interpreter:
+-executabil care are toate functionalitatea temei
+-argumentele sunt cele din tema, cod si baza(optional)
+-la final, dupa alte argumente se poate adauga --verbose, care afiseaza codul, instructiunea executata si starea stivei inainte si dupa executie
+
+mytime.cfg:
+-fiecare linie contine numele unui test si o valoare numerica rationala care reprezinta limita de timp in secunde pentru acel test
+-poate lipsi
+-daca timpul e 0, testul va fi ignorat cu totul
+
+csamples/Makefile sau jsamples/Makefile:
+-exemplu de Makefile care arata cum trebuie sa arate regula de run
+-numele executabilului si structura sunt doar exemple, nu sunt impuse
+-$(input) este un nume foarte prost ales, de fapt se refera la codul sursa. A ramas asa pentru ca deja s-a publicat enuntul
+-$(base) se refera la baza pentru input/output si contine numere formate doar din primele $(base) cifre din sirul "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+-$(base) este intre 2 si 36 daca apare
