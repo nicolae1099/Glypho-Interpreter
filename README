@@ -3,21 +3,3 @@ Nitu Nicolae-Iulian 331 CA Glypho Interpreter
 I implemented a Glypho interpreter, which reads the source code from an input file and displays the result at standard output. 
 Glypho is a programming language that is independent of the symbols used from one instruction to another.
 For each point in the execution, the language interpreter deciphers the instruction that the symbols represent.
-
-
-* Am folosit structura ArrayDeque pt a putea sterge/adauga instant la varful
-    sau coada cozii.
-* Am folosit BigInteger pt a putea salva numere mai mari de 64 biti.
-* Citesc din fisierul .gly linie cu linie, verific pt erori, verific
-    daca parantezele se inchid corect
-* Iau 4 caractere din string. Le fac o copie, sterg duplicatele din copie.
- Apoi parcurg sirul original si ii dau index-ul din copia fara duplicate.
- Astfel realizez codul pt instructiune.
-* Apoi verific pt exceptii.
-* Apoi execut comanda respectiva.
-
-* Am mai folosit un stack pt a salva pozitiile pe care se afla LBrace.
-Daca dau de un RBrace si in vf stivei nu se afla 0, atunci reiterez
-inca o data de la pozitia ultimului LBrace.
-Daca dau peste un LBrace si am in vf stivei 0, atunci sar peste instructiuni
-pana ajung la RBraceul corespunzator.
